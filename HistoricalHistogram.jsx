@@ -6,7 +6,7 @@ import { Chart as ChartJS, CategoryScale, LinearScale, BarElement, Title, Toolti
 ChartJS.register(CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend);
 
 const HistoricalHistogram = ({ historicalData, selectedPollutant, setSelectedPollutant }) => {
-  
+
   // Define pollutant-specific thresholds and colors
   const pollutantThresholds = {
     aqi: [50, 100, 150, 200, 300], // AQI breakpoints
@@ -77,8 +77,8 @@ const HistoricalHistogram = ({ historicalData, selectedPollutant, setSelectedPol
   return (
     <div className="historical-chart">
       <h2 className="chart-title">Historical Air Quality Data</h2>
-      
-      <div className="chart-controls">
+
+      {/* <div className="chart-controls">
         <select
           value={selectedPollutant}
           onChange={(e) => setSelectedPollutant(e.target.value)}
@@ -88,16 +88,16 @@ const HistoricalHistogram = ({ historicalData, selectedPollutant, setSelectedPol
             <option key={pollutant} value={pollutant}>{pollutant.toUpperCase()}</option>
           ))}
         </select>
-      </div>
-      
+      </div> */}
+
       <div className="chart-container" style={{ position: 'relative' }}>
         {/* Display min/max stats if data is available */}
         {minValue !== null && maxValue !== null && (
-          <div 
-            className="chart-stats" 
+          <div
+            className="chart-stats"
             style={{
               position: 'absolute',
-              top: '-90px',
+              top: '-60px',
               right: '20px',
               padding: '10px 15px',
               borderRadius: '6px',
@@ -112,7 +112,7 @@ const HistoricalHistogram = ({ historicalData, selectedPollutant, setSelectedPol
             <div>🔻 Min {selectedPollutant.toUpperCase()}: {minValue}</div>
           </div>
         )}
-        
+
         {chartData.labels.length > 0 ? (
           <Bar data={chartData} options={{ responsive: true, maintainAspectRatio: false }} height={300} />
         ) : (

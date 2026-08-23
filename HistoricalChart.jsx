@@ -92,7 +92,7 @@ const HistoricalChart = ({ historicalData, selectedPollutant, setSelectedPolluta
     <div className="historical-chart">
       <h2 className="chart-title">Historical Air Quality Data</h2>
 
-      <div className="chart-controls">
+      {/* <div className="chart-controls">
         <select
           value={selectedPollutant}
           onChange={(e) => setSelectedPollutant(e.target.value)}
@@ -102,7 +102,7 @@ const HistoricalChart = ({ historicalData, selectedPollutant, setSelectedPolluta
             <option key={pollutant} value={pollutant}>{pollutant.toUpperCase()}</option>
           ))}
         </select>
-      </div>
+      </div> */}
 
       <div className="chart-container" style={{ position: 'relative' }}>
         {/* Display Min/Max Stats */}
@@ -111,7 +111,7 @@ const HistoricalChart = ({ historicalData, selectedPollutant, setSelectedPolluta
             className="chart-stats"
             style={{
               position: 'absolute',
-              top: '-90px',
+              top: '-60px',
               right: '20px',
               padding: '10px 15px',
               borderRadius: '6px',
@@ -119,7 +119,7 @@ const HistoricalChart = ({ historicalData, selectedPollutant, setSelectedPolluta
               fontSize: '0.9rem',
               color: '#fff',
               fontWeight: 'bold',
-              background: `linear-gradient(135deg, ${getLineColor(maxValue)}, ${getLineColor(minValue)}) ` ,
+              background: `linear-gradient(135deg, ${getLineColor(maxValue)}, ${getLineColor(minValue)})`,
             }}
           >
             <div>🔺 Max {selectedPollutant.toUpperCase()}: {maxValue}</div>

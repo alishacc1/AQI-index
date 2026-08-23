@@ -40,7 +40,7 @@ const LiveAQIIndicator = () => {
         fontWeight: 'bold',
         whiteSpace: 'nowrap'
       }}>
-        Live AQI
+        Live NH3
       </span>
     </div>
   );
