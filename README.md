@@ -1,33 +1,22 @@
-# 🌍 Air Quality Intelligence Platform
+# React + Vite
 
-## 📖 Project Overview  
-The **Air Quality Intelligence Platform** is a comprehensive system for monitoring and forecasting air quality across India.  
-It integrates **real-time air quality data, 5 years of historical data, LSTM-based forecasting models, a RAG-powered chatbot using Google Gemini, and an interactive React dashboard**.  
-The system delivers actionable insights into pollution levels, health risks, and future trends across **32 States & Union Territories**, powered by data from **662+ monitoring stations**.  
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
----
+Currently, two official plugins are available:
 
-## ✨ Features  
-- **Real-time AQI Monitoring** – Live updates from 662+ monitoring stations across India  
-- **Interactive Heatmaps** – State-wise and nationwide visualization of air quality  
-- **5-Day Forecasting** – LSTM models provide pollutant-wise predictions for all 32 States & UTs  
-- **AI Chatbot** – RAG-based assistant (Google Gemini + FAISS) for AQI-related queries  
-- **Pollutant Analysis** – Breakdown of 8 pollutants: PM2.5, PM10, CO, SO₂, NO₂, O₃, NO, NH₃  
-- **Health Recommendations** – Precautionary measures and health guidelines based on AQI levels  
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
----
-## 🏗️ Project Architecture  
-The project is organized into four main components:
+## Expanding the ESLint configuration
 
-```
-AQI_Dashboard-main/
-├── aqi-real-time-dashboard/    # React frontend for visualization
-├── heatmap_backend/            # Backend for heatmap generation
-├── prediction_backend/         # Backend for AQI forecasting
-└── rag-backend/                # Backend for AI chatbot
-```
+If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
 
 
-## 📌 Conclusion  
-This platform provides an **end-to-end solution** for air quality monitoring and forecasting in India.  
-By combining **real-time monitoring, machine learning predictions, and AI-driven assistance**, it empowers users to understand pollution levels, assess health impacts, and prepare for future air quality scenarios through a user-friendly dashboard.  
+
+## Addition in dashboard
+
+- Refresh button (nav to home when clicked)
+- Add a comparison of each real time pollutant and aqi with say national avg etc
+- Add a top 10 most polluted cities table in india (real time)
+
+
