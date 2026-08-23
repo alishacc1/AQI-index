@@ -16,40 +16,40 @@ const HealthImpactCard = ({ imageSrc, title, description }) => {
 };
 
 const Component5 = () => {
-  const impactsNH3 = [
+  const impacts = [
     {
-      title: "Respiratory Issues",
-      description: "Exposure to ammonia can cause irritation and damage to the respiratory system.",
-      imageSrc: "/nh3/c5i1.webp" // Replace with your actual image paths
+      title: "Nose Irritation",
+      description: "Discomfort in the nasal passages.",
+      imageSrc: "/so2/c5i1.webp"
     },
     {
-      title: "Eye Irritation",
-      description: "Ammonia vapors can irritate the eyes, leading to redness and discomfort.",
-      imageSrc: "/nh3/c5i2.webp"
+      title: "Throat and Lung Irritation",
+      description: "Inflammation and pain in the throat.",
+      imageSrc: "/so2/c5i2.webp"
     },
     {
-      title: "Environmental Damage",
-      description: "Ammonia contributes to nutrient pollution, which can harm aquatic life and ecosystems.",
-      imageSrc: "/nh3/c5i3.webp"
+      title: "Coughing and Phlegm",
+      description: "Persistent cough and mucus production.",
+      imageSrc: "/so2/c5i3.webp"
     },
     {
-      title: "Soil Acidification",
-      description: "When deposited, ammonia can change soil pH, impacting plant growth and soil health.",
-      imageSrc: "/nh3/c5i4.webp"
+      title: "Asthma Attacks",
+      description: "Triggering of asthma symptoms or existing asthma.",
+      imageSrc: "/so2/c5i4.webp"
     },
     {
-      title: "Increased Smog Formation",
-      description: "Ammonia plays a role in secondary particulate matter formation, contributing to smog.",
-      imageSrc: "/nh3/c5i5.webp"
+      title: "Wheezing",
+      description: "High-pitched whistling sound when breathing.",
+      imageSrc: "/so2/c5i5.webp"
     }
   ];
 
   return (
     <div className="health-impacts-container">
-      <h2>Short-Term NH3 Exposure Impacts</h2>
+      <h2>Short-Term PM2.5 Exposure Impacts</h2>
 
       <div className="impacts-grid">
-        {impactsNH3.map((impact, index) => (
+        {impacts.map((impact, index) => (
           <HealthImpactCard
             key={index}
             title={impact.title}

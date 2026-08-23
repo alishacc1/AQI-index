@@ -8,9 +8,7 @@ const PM25SizeComparison = () => {
         {/* Info box with red side border */}
         <div className="info-box">
           <p>
-            PM2.5 particles, with a diameter of 2.5 micrometers or less,
-            are approximately 30 times smaller than a human hair, making them
-            a significant yet often unseen threat to air quality.
+          Sulfur Dioxide (SO₂): Sulfur dioxide is the major component in acid rain as it easily dissolves in the water and forms sulfuric acid. And SO2 in acid rain can harm forests, crops, and aquatic ecosystems, change soil acidity, and deteriorate building materials and historical monuments.
           </p>
           <div className="line-container">
             <svg width="200" height="30" viewBox="0 0 200 30">
@@ -27,7 +25,7 @@ const PM25SizeComparison = () => {
         {/* SVG illustration replaced by an <img> tag */}
         <div className="illustration">
           <img
-            src="/nh3/c3.svg"
+            src="/so2/c3.svg"
             alt="Component 3 Illustration"
           />
         </div>

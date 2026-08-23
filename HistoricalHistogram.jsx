@@ -19,7 +19,6 @@ const HistoricalHistogram = ({ historicalData, selectedPollutant, setSelectedPol
     no: [40, 80, 200, 400, 600], // NO in ppb
     nh3: [200, 400, 800, 1200, 1600], // NH3 in ppb
   };
-
   const colors = ['#A8E05F', '#FDD74B', '#FB9B57', '#F66A67', '#A97ABC', '#A87383']; // Colors from Good to Hazardous
 
   // Get color based on value for the selected pollutant

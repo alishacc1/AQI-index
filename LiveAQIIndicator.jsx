@@ -40,7 +40,7 @@ const LiveAQIIndicator = () => {
         fontWeight: 'bold',
         whiteSpace: 'nowrap'
       }}>
-        Live NH3
+        Live SO2
       </span>
     </div>
   );
